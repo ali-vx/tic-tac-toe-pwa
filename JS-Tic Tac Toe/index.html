@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <meta name="theme-color" content="#12522D" />
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if('serviceWorker' in navigator)
+      {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1 class="game-title">Tic Tac Toe</h1>
+      <div class="game-container">
+        <div data-cell-index="0" class="cell"></div>
+        <div data-cell-index="1" class="cell"></div>
+        <div data-cell-index="2" class="cell"></div>
+        <div data-cell-index="3" class="cell"></div>
+        <div data-cell-index="4" class="cell"></div>
+        <div data-cell-index="5" class="cell"></div>
+        <div data-cell-index="6" class="cell"></div>
+        <div data-cell-index="7" class="cell"></div>
+        <div data-cell-index="8" class="cell"></div>
+      </div>
+      <h2 class="game-status"></h2>
+      <button class="game-restart" type="button">Restart</button>
+    </section>
+  </body>
+</html>
